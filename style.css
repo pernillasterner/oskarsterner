@@ -6,8 +6,74 @@ Version: 1.0
 Text Domain: oskarsterner
 */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Raleway", sans-serif;
-  text-color: #fff;
-  background-color: #fff;
+  color: #fff;
+  background-color: #000;
+}
+
+h1, h2 {
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.hero_container {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 2em;
+
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.1)), url('http://localhost:10004/wp-content/uploads/2025/03/att.Kk4E-Hto4brXE8rAU-pkjUXDM4ti-cQHO0V0asZxsYU.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.inner_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* background: red; */
+}
+
+.heading_wrapper {
+  /* background: blue; */
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.name {
+  font-size: 8rem;
+  max-width: 10ch;
+  line-height: 0.8;
+}
+
+.social-links_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2em;
+}
+
+.social-links_wrapper a {
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+  text-orientation: sideways-right;
+  color: rgba(255, 255, 255, 0.7);
 }
