@@ -14,6 +14,18 @@
 
 <header>
     <div class="site-header">
+    <a href="https://www.instagram.com/hood.seven/" target="_blank">
+        <div class="highlights">
+            <div class="location">
+              <strong>HØØD7</strong>
+              <p>Hamburger</p>
+            </div>
+            <hr>
+            <div class="date">
+              <span>4 April</span>
+            </div>
+          </div>
+        </a>
         <div class="logo">
             <a href="<?php echo home_url(); ?>">
                 <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/logo.png" alt="<?php bloginfo( 'name' ); ?>"> -->

@@ -16,6 +16,7 @@ body {
   font-family: "Raleway", sans-serif;
   color: #fff;
   background-color: #000;
+  position: relative;
 }
 
 h1, h2 {
@@ -27,6 +28,29 @@ a {
   color: #fff;
 }
 
+/* HEADER */
+header {
+  width: 100%;
+  position: absolute;
+  /* background: pink; */
+  padding: 2em;
+}
+
+.highlights {
+  display: flex;
+  gap: 1em;
+}
+
+.highlights .location {
+  display: flex;
+  flex-direction: column;
+}
+
+.highlights .date {
+  font-size: 1.6rem;
+}
+
+/* HERO */
 .hero_container {
   min-height: 100vh;
   display: flex;

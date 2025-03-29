@@ -12,7 +12,7 @@
 
         <div class="social-links_wrapper">
           <a href="https://www.instagram.com/oskar.sterner/" target="_blank">Instagram</a>
-          <a href="">Facebook</a>
+          <a href="https://www.facebook.com/sternerjpg/?locale=sv_SE" target="_blank">Facebook</a>
         </div>
       </div>
     </section>
