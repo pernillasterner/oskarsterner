@@ -3,7 +3,7 @@
 ?>
 
 <main>
-    <section class="hero_container">
+    <section id="hero" class="container hero">
       <div class="inner_container">
         <div class="heading_wrapper">
           <h1 class="title">Tattoo Artist</h1>
@@ -16,6 +16,8 @@
         </div>
       </div>
     </section>
+
+    <?php get_template_part( 'contact' ); ?>
 </main>
 
 <?php

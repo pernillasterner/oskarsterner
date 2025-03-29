@@ -33,7 +33,7 @@ header {
   width: 100%;
   position: absolute;
   /* background: pink; */
-  padding: 2em;
+  padding: 4em;
 }
 
 .highlights {
@@ -50,13 +50,16 @@ header {
   font-size: 1.6rem;
 }
 
+.container {
+  padding: 4em;
+}
+
 /* HERO */
-.hero_container {
+.hero {
   min-height: 100vh;
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
-  padding: 2em;
 
   background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.1)), url('http://localhost:10004/wp-content/uploads/2025/03/att.Kk4E-Hto4brXE8rAU-pkjUXDM4ti-cQHO0V0asZxsYU.jpg');
   background-size: cover;
@@ -78,11 +81,11 @@ header {
   gap: 1.2em;
 }
 
-.title {
+.heading_wrapper .title {
   font-size: 2rem;
 }
 
-.name {
+.heading_wrapper .name {
   font-size: 8rem;
   max-width: 10ch;
   line-height: 0.8;
@@ -101,3 +104,64 @@ header {
   text-orientation: sideways-right;
   color: rgba(255, 255, 255, 0.7);
 }
+
+/* CONTACT */
+.contact {
+  padding: 5em 4em;
+  /* background: green; */
+}
+
+.contact .header {
+  font-size: 5rem;
+  text-align: right;
+  padding-bottom: 2em;
+}
+
+.contact .lower-section {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+.contact .lower-section h3 {
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 0.2rem;
+  padding-bottom: 0.4em;
+}
+
+.contact .lower-section p, .contact .lower-section a {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.contact .lower-section a:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.left-section .mail {
+  text-transform: initial;
+}
+
+.contact .location {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+
+/* FOOTER */
+.footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  font-size: 1.5em;
+/* background: blue; */
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .footer .copyright span {
+  text-transform: uppercase;
+}  */
