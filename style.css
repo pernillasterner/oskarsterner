@@ -1,0 +1,14 @@
+/*
+Theme Name: Oskar Sterner
+Author: Pernilla Sterner
+Description: Ett tema för Oskar Sterner - Tattoo Artist
+Version: 1.0
+Text Domain: oskarsterner
+*/
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
