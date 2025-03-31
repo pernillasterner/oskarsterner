@@ -6,6 +6,10 @@ Version: 1.0
 Text Domain: oskarsterner
 */
 
+#wpadminbar {
+  display: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -32,8 +36,15 @@ a {
 header {
   width: 100%;
   position: absolute;
-  /* background: pink; */
   padding: 4em;
+}
+
+.site-header h3 {
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 0.2rem;
+  padding-bottom: 0.4em;
 }
 
 .highlights {
@@ -60,7 +71,7 @@ header {
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
-
+/* url('https://oskarsterner.com/wp-content/uploads/2025/03/att.Kk4E-Hto4brXE8rAU-pkjUXDM4ti-cQHO0V0asZxsYU.jpg'); */
   background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.1)), url('http://localhost:10004/wp-content/uploads/2025/03/att.Kk4E-Hto4brXE8rAU-pkjUXDM4ti-cQHO0V0asZxsYU.jpg');
   background-size: cover;
   background-position: center center;
@@ -71,14 +82,15 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  /* background: red; */
+  min-height: 40vh;
 }
 
 .heading_wrapper {
-  /* background: blue; */
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   gap: 1.2em;
+  margin-top: 10em;
 }
 
 .heading_wrapper .title {
@@ -103,12 +115,112 @@ header {
   writing-mode: vertical-rl;
   text-orientation: sideways-right;
   color: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
 }
+
+@media (max-width: 780px) {
+  header {
+    padding: 4em 2em;
+  }
+
+  .container {
+    padding: 4em 2em;
+  }
+
+  .heading_wrapper .title {
+    font-size: 1.5rem;
+  }
+
+  .heading_wrapper .name {
+    font-size: 6rem;
+  }
+
+  .social-links_wrapper {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    padding: 4em 1em;
+  }
+
+  .container {
+    padding: 6em 1em;
+  }
+
+  .heading_wrapper {
+    gap: 0.6em;
+  }
+
+  .heading_wrapper .title {
+    font-size: 1rem;
+  }
+
+  .heading_wrapper .name {
+    font-size: 4.5rem;
+    line-height: 0.9;
+  }
+}
+
+
+/* ABOUT */
+.about {
+  padding: 8em;
+}
+
+.about .inner_container {
+  flex-direction: column;
+  gap: 2em;
+}
+
+.about .bio {
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.about .bio.second {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.about .shortcode_insta {
+  color: #FFC942;
+  font-size: 2rem;
+  font-family: 'Antonio', sans-serif;
+}
+
+@media (max-width: 780px) {
+  .about {
+    padding: 4em 2em;
+  }
+
+  .about .bio {
+    font-size: 1.2rem;
+  }
+
+  .about .shortcode_insta {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .about {
+    padding: 1em;
+  }
+
+  .about .bio {
+    font-size: 1rem;
+  }
+}
+
 
 /* CONTACT */
 .contact {
-  padding: 5em 4em;
-  /* background: green; */
+  padding: 4em;
 }
 
 .contact .header {
@@ -132,7 +244,7 @@ header {
 }
 
 .contact .lower-section p, .contact .lower-section a {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 300;
 }
 
@@ -150,18 +262,77 @@ header {
   align-items: flex-end;
 }
 
+@media (max-width: 780px) {
+  .contact {
+    padding: 6em 2em;
+  }
+
+  .contact .header {
+    font-size: 2.5rem;
+    text-align: center;
+    padding-bottom: 2em;
+  }
+
+  .contact .lower-section {
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .left-section, .contact .location {
+    text-align: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact {
+    padding: 6em 1em;
+  }
+
+  .contact .header {
+    font-size: 1.8rem;
+  }
+
+  .contact .lower-section p, .contact .lower-section a {
+    font-size: 1.6rem;
+  }
+}
 
 /* FOOTER */
+.container.footer {
+  padding: 2em 1em;
+}
+
 .footer {
   border-top: 1px solid rgba(255, 255, 255, 0.7);
   color: rgba(255, 255, 255, 0.7);
   text-transform: uppercase;
-  font-size: 1.5em;
-/* background: blue; */
   display: flex;
   justify-content: space-between;
 }
 
-/* .footer .copyright span {
-  text-transform: uppercase;
-}  */
+.footer .copyright, .footer .to-top {
+  font-size: 1.5rem;
+} 
+
+.copyright .all-rights, .footer .to-top {
+  text-wrap: nowrap;
+}
+
+@media (max-width: 900px) {
+  .footer .copyright, .footer .to-top {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 670px) {
+  .footer .copyright, .footer .to-top {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer .copyright, .footer .to-top {
+    font-size: 0.7rem;
+  }
+}

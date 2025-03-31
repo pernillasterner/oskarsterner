@@ -17,6 +17,8 @@
       </div>
     </section>
 
+    <?php get_template_part( 'about' ); ?>
+
     <?php get_template_part( 'contact' ); ?>
 </main>
 
